@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>01.02.17</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<body>
+<!--<form action="javascript:void(null);" method="post" id="V" name="Stambul" onsubmit="call()">-->
+<form enctype="multipart/form-data" action="send.php" method="POST">
+
+ <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+ 
+<label>Имя</label><br>
+<input name="Name" type="text"/> <br>
+<label>Фамилия</label><br>
+<input name="SurName" type="text"/><br>
+<label>Прошу пароль</label><br>
+<input name="Give me password" type="password"/><br><br>
+ 
+<!--<input name="userfile" type="file" />
+<input type="submit" value="Send File" />-->
+
+<input type=file name=uploadfile>
+<input type=submit value=Загрузить></form>
+</form>
+<!--<script type="text/javascript" language="javascript">
+ 	function call() {
+ 	  var msg   = $('#V').serialize();
+        $.ajax({
+          type: 'POST',
+          url: 'send.php',
+          data: msg,
+          success: function(data) {
+            $('#results').html(data);
+          },
+          error:  function(xhr, str){
+	    alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+ 
+    }
+</script>
+<div id="results"></div>-->
+</body>
+</html>
